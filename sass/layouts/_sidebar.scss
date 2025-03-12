@@ -20,8 +20,10 @@
                 color: $var-color-white;
                 background-color: $var-color-dark-md; 
                 position: relative;
+                background-image: none !important;
 
                 &::after {
+                    background-image: none !important;
                     content: "\f0d7"; 
                     font-family: "Font Awesome 6 Free";
                     font-weight: 900;
@@ -31,6 +33,7 @@
                 }
                 &.collapsed::after{
                  rotate: 180deg;
+                 background-image: none !important;
                 }
                
             }
