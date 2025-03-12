@@ -1,40 +1,52 @@
-.sidebar-wrapper{
- 
+.sidebar-wrapper {
     margin-top: 55px;
     width: 260px;
     overflow-y: scroll;
     background-color: $var-color-dark-md;
-    
-    .sidebar
-    {
-        overflow-y: scroll;
-        border: 2px solid green;
-        
-        
-        .accordion{
-            background-color: transparent !important;
-        }
-        .sidenav-links,.accordion{
 
-        
-            background-color:transparent !important;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .sidebar {
+        .sidenav-links {
+            .accordion-item {
+                background-color: $var-color-dark-md; 
+            }
+
+            .accordion-button {
+                @include flexbox-between;
+                width: 100%;
+                color: $var-color-white;
+                background-color: $var-color-dark-md; 
+                position: relative;
+
+                &::after {
+                    content: "\f0d7"; 
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    color: $var-color-white;
+                    // transition: transform 0.3s ease;
+                    rotate: 180deg;
+                }
+                &.collapsed::after{
+                 rotate: 180deg;
+                }
                
-            
-            .sidenav-links-wrapper{
+            }
+
+            .sidenav-links-wrapper {
                 display: flex;
                 flex-direction: column;
                 margin-inline: auto;
-                .links{
-                    
-                    a{
+
+                .links {
+                    a {
+                        color: $var-color-white;
                         text-decoration: none;
                     }
                 }
             }
-
         }
-
     }
-
 }
-
