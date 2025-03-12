@@ -9,8 +9,10 @@
     }
 
     .sidebar {
+        font: $fw-md $fs-md $primary-font;
         .sidenav-links {
             .accordion-item {
+                border: none !important;
                 background-color: $var-color-dark-md; 
             }
 
@@ -23,16 +25,18 @@
                 background-image: none !important;
 
                 &::after {
+                    @include flexbox-center;
                     background-image: none !important;
                     content: "\f0d7"; 
                     font-family: "Font Awesome 6 Free";
                     font-weight: 900;
                     color: $var-color-white;
                     // transition: transform 0.3s ease;
-                    rotate: 180deg;
+                    
                 }
                 &.collapsed::after{
-                 rotate: 180deg;
+                    @include flexbox-center;
+                
                  background-image: none !important;
                 }
                
