@@ -1,1 +1,34 @@
 @import "../layouts/header";
+@import "../layouts/sidebar";
+
+.main-wrapper{
+    height: 100vh;
+    width: 100vw;
+
+    .pages-wrapper{
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        .page1{
+            height: 100%;
+            width: 100%;
+            background-color: beige;
+        }
+
+        .page2{
+            height: 100%;
+            width: 100%;
+            background-color: pink;
+        }
+
+        .page3{
+            height: 100%;
+            width: 100%;
+            background-color: crimson;
+        }
+
+
+    }
+
+
+}

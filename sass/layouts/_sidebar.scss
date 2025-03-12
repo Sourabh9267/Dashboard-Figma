@@ -1,0 +1,40 @@
+.sidebar-wrapper{
+ 
+    margin-top: 55px;
+    width: 260px;
+    overflow-y: scroll;
+    background-color: $var-color-dark-md;
+    
+    .sidebar
+    {
+        overflow-y: scroll;
+        border: 2px solid green;
+        
+        
+        .accordion{
+            background-color: transparent !important;
+        }
+        .sidenav-links,.accordion{
+
+        
+            background-color:transparent !important;
+               
+            
+            .sidenav-links-wrapper{
+                display: flex;
+                flex-direction: column;
+                margin-inline: auto;
+                .links{
+                    
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
