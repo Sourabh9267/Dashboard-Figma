@@ -1,9 +1,9 @@
 .sidebar-wrapper {
-    min-height: calc(100vh - 55px);
-    margin-top: 55px; 
+    min-height: calc(100vh - 56px);
+    margin-top: 56px; 
     width: 260px;
-    overflow-y: scroll;
-    background-color: $var-color-dark;
+    overflow-y: auto;
+    background-color: $var-color-dark-md;
     transition: all ease 0.3s;
     &::-webkit-scrollbar {
         width: 0px;
@@ -24,7 +24,7 @@
         }
        
         .sidenav-links-container{
-            background-color: $var-color-dark-md; 
+         
             padding:0px 0px 15px 50px;
         }
 
@@ -44,8 +44,7 @@
                 position: relative;
                 background-image: none !important;
                 
-                margin-top: 2px;
-                margin-bottom: 2px;
+                border-top: 2px solid $var-color-dark;
                 box-shadow: none !important;
                 &::after {
                     @include flexbox-center(row,nowrap);
@@ -91,7 +90,7 @@
     
 
     .sidebar-wrapper {
-        width: 140px;
+        width: 0px;
         .sidebar {
             font: $fw-md $fs-s $primary-font;
             width: 100%;

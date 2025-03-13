@@ -5,11 +5,14 @@
 
 
     .toggler-wrapper{
-
+        @include flexbox-center;
         button{
+            margin: 0;
+            padding: 0;
             i{
-                font-size: 25px;
+                font-size: 18px;
              color: $var-color-white;   
+             
             }
         }
     }
