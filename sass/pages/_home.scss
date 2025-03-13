@@ -1,6 +1,22 @@
 @import "../layouts/header";
 @import "../layouts/sidebar";
 
+.home-wrapper{
+
+
+    .toggler-wrapper{
+
+        button{
+            i{
+                font-size: 25px;
+             color: $var-color-white;   
+            }
+        }
+    }
+
+
+
+
 .main-wrapper{
 
     
@@ -32,5 +48,7 @@
 
 
 
+
+}
 
 }
