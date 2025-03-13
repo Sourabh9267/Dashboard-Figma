@@ -1,19 +1,39 @@
 .sidebar-wrapper {
     margin-top: 55px;
+    min-width: 260px;
     width: 260px;
     overflow-y: scroll;
-    background-color: $var-color-dark-md;
+    background-color: $var-color-dark;
 
     &::-webkit-scrollbar {
-        width: 5px;
+        width: 0px;
     }
 
     .sidebar {
         font: $fw-md $fs-md $primary-font;
+        
+        .button-wrapper{
+            
+            padding: 15px 30px 15px 15px;
+            background-color: $var-color-dark-md;
+            button{
+                text-align: left;
+                width: 100%;
+                background-color: $var-color-white;
+            }
+        }
+       
+        .sidenav-links-container{
+            background-color: $var-color-dark-md; 
+            padding:0px 0px 15px 50px;
+        }
+
         .sidenav-links {
+
             .accordion-item {
                 border: none !important;
                 background-color: $var-color-dark-md; 
+
             }
 
             .accordion-button {
@@ -23,7 +43,10 @@
                 background-color: $var-color-dark-md; 
                 position: relative;
                 background-image: none !important;
-
+                
+                margin-top: 2px;
+                margin-bottom: 2px;
+                box-shadow: none !important;
                 &::after {
                     @include flexbox-center;
                     background-image: none !important;
@@ -41,12 +64,14 @@
                 }
                
             }
-
+        
             .sidenav-links-wrapper {
+                margin-bottom: 0;
+                padding-top: 10px;
                 display: flex;
                 flex-direction: column;
                 margin-inline: auto;
-
+                gap: 10px;
                 .links {
                     a {
                         color: $var-color-white;
