@@ -2,8 +2,8 @@
 {
     width: 100%;
     background-color: $var-color-white;
-
-
+    padding: 30px;
+    margin-bottom: 30px;
     .content{
         h2{
             font:$fw-b $fs-xl $primary-font;
@@ -53,6 +53,8 @@
 }
 
 .form-wrapper{
+    padding: 30px;
+    margin-bottom: 30px;
     background-color: $var-color-white;
 
     .content{
@@ -73,9 +75,14 @@
             li{
                 
                 button{
+                    padding: 5px;
                     font: $fw-r $fs-md $primary-font;
                     color: black;
                     outline: 1px solid #cfcfcf;
+                    img{
+                        height: 25px;
+                        width: 25px;
+                    }
                 }
                 .active{
                     color: black;
@@ -101,7 +108,12 @@
 
 }
 
+.form-container{
+    gap: 30px;
+}
+
 .form-wrapper-2{
+    padding: 30px;
 background-color: $var-color-white;
 
 .content{
@@ -124,4 +136,8 @@ form{
         min-height: 165px;
     }
 }
+}
+
+#form-2{
+    height: fit-content;
 }
