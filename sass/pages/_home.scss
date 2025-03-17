@@ -28,6 +28,7 @@
       margin-left: 260px;
       margin-top: 55px;
       background-color: $var-color-grey-l;
+      transition: all ease 0.3s;
     }
   }
 
@@ -38,5 +39,6 @@
     .home-wrapper .main-wrapper .pages-wrapper{
         width: 100%;
         margin-left: 0;
+        
     }
 }
