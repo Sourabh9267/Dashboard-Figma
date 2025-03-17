@@ -3,6 +3,12 @@
     background-color: $var-color-white;
     .sub-navbar{
 
+        font-family: $primary-font;
+        h4{
+            font-weight: $fw-b;
+            font-size: $fs-xl;
+            margin-block: auto;
+        }
 
         padding: 20px;
         gap: 20px;

@@ -50,24 +50,23 @@
                 
                 border-top: 2px solid $var-color-dark;
                 box-shadow: none !important;
+            
                 &::after {
-                    @include flexbox-center(row,nowrap);
+                    @include flexbox-center(row, nowrap);
                     background-image: none !important;
-                    content: "\f0d7"; 
+                    content: "\f106"; 
                     font-family: "Font Awesome 6 Free";
                     font-weight: 900;
                     color: $var-color-white;
-                    rotate:360deg;
-                    // transition: transform 0.3s ease;
-                    
+                    transform: rotate(180deg);  // Set default to downwards
+                    transition: transform 0.3s ease-in-out;
                 }
-                &.collapsed::after{
-                    @include flexbox-center(row,nowrap);
                 
-                 background-image: none !important;
+                &.collapsed::after {
+                    transform: rotate(0deg);  // Rotate upwards when collapsed
                 }
-               
             }
+            
         
             .sidenav-links-wrapper {
                 margin-bottom: 0;

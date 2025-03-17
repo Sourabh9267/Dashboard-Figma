@@ -18,7 +18,14 @@
     .table-responsive{
         table{
            
-            tr{
+            tr{ 
+                font-family: $primary-font;
+                th{
+                    font-weight: $fw-md;
+                }
+                td{
+                    font-weight: $fw-r;
+                }
                 th,td{
                     padding-inline: 20px;
                     width: fit-content;
