@@ -1,5 +1,8 @@
 @import "../layouts/header";
 @import "../layouts/sidebar";
+@import "../components/subnavbar";
+@import "../components/count-cards";
+@import "../components/form-table";
 
 .home-wrapper{
 
@@ -21,31 +24,19 @@
 
 
 .main-wrapper{
-
     
-
+    overflow-y: scroll;
+    
+    width: 100%;
+    
     .pages-wrapper{
-        height: 100%;
-        width: 100%;
-        overflow-y: scroll;
-        .page1{
-            height: 100%;
-            width: 100%;
-            background-color: beige;
-        }
-
-        .page2{
-            height: 100%;
-            width: 100%;
-            background-color: pink;
-        }
-
-        .page3{
-            height: 100%;
-            width: 100%;
-            background-color: crimson;
-        }
-
+    
+        width: calc(100% - 260px);
+        margin-left: 260px;
+        margin-top: 55px;
+        background-color: $var-color-grey-l;
+       
+        
 
     }
 

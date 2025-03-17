@@ -2,7 +2,10 @@
     min-height: calc(100vh - 56px);
     margin-top: 56px; 
     width: 260px;
-    overflow-y: auto;
+    position: fixed;
+    bottom: 0;
+    overflow: auto;
+    top: 0;
     background-color: $var-color-dark-md;
     transition: all ease 0.3s;
     &::-webkit-scrollbar {
@@ -10,6 +13,7 @@
     }
 
     .sidebar {
+        
         font: $fw-md $fs-md $primary-font;
         
         .button-wrapper{

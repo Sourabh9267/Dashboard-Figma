@@ -17,3 +17,9 @@ function togglesidebar() {
         sidebar.style.width="260px";
     }
 }
+
+
+// Alert Fx Bootstrap
+
+const alertList = document.querySelectorAll('.alert')
+const alerts = [...alertList].map(element => new bootstrap.Alert(element))
