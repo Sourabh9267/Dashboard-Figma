@@ -4,45 +4,39 @@
 @import "../components/count-cards";
 @import "../components/form-table";
 
-.home-wrapper{
-
-
-    .toggler-wrapper{
-        @include flexbox-center;
-        button{
-            margin: 0;
-            padding: 0;
-            i{
-                font-size: 18px;
-             color: $var-color-white;   
-             
-            }
-        }
+.home-wrapper {
+  .toggler-wrapper {
+    @include flexbox-center;
+    button {
+      margin: 0;
+      padding: 0;
+      i {
+        font-size: 18px;
+        color: $var-color-white;
+      }
     }
+  }
 
-
-
-
-.main-wrapper{
-    
+  .main-wrapper {
     overflow-y: scroll;
-    
+
     width: 100%;
-    
-    .pages-wrapper{
-    
-        width: calc(100% - 260px);
-        margin-left: 260px;
-        margin-top: 55px;
-        background-color: $var-color-grey-l;
-       
-        
 
+    .pages-wrapper {
+        overflow-x: hidden;
+      width: calc(100% - 260px);
+      margin-left: 260px;
+      margin-top: 55px;
+      background-color: $var-color-grey-l;
     }
-
-
-
+  }
 
 }
 
+
+@media screen and (max-width:580px){
+    .home-wrapper .main-wrapper .pages-wrapper{
+        width: 100%;
+        margin-left: 0;
+    }
 }
