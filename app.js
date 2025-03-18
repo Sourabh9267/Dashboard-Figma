@@ -29,6 +29,22 @@ function togglesidebar() {
 }
 
 
+// Login Creds
+
+document.getElementById("loginForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if (email === "admin@admin.com" && password === "1234") {
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Invalid email or password !  Please enter demo credentials email as: admin@admin.com and Password : 1234");
+    }
+});
+
+
+
 // Alert Fx Bootstrap
 
 const alertList = document.querySelectorAll('.alert')
