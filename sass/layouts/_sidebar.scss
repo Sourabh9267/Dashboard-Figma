@@ -45,26 +45,23 @@
                 width: 100%;
                 color: $var-color-white;
                 background-color: $var-color-dark-md; 
-                position: relative;
-                background-image: none !important;
-                
+                position: relative; 
                 border-top: 2px solid $var-color-dark;
                 box-shadow: none !important;
             
-                &::after {
-                    @include flexbox-center(row, nowrap);
-                    background-image: none !important;
-                    content: "\f106"; 
-                    font-family: "Font Awesome 6 Free";
+                &::after{
+                    content:"\f107";
+                    font-family: "Font Awesome 5 Free";
+                    display: inline-block;
+                    padding-right: 3px;
+                    vertical-align: middle;
                     font-weight: 900;
-                    color: $var-color-white;
-                    transform: rotate(180deg);  // Set default to downwards
-                    transition: transform 0.3s ease-in-out;
+                    background-image: none !important;
+                    width: auto !important;
                 }
-                
-                &.collapsed::after {
-                    transform: rotate(0deg);  // Rotate upwards when collapsed
-                }
+               .collapsing{
+                transform: rotateX(-180deg) !important;
+               }
             }
             
         
