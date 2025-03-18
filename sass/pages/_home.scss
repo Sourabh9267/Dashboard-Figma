@@ -24,8 +24,9 @@
 
     .pages-wrapper {
         overflow-x: hidden;
-      width: calc(100% - 260px);
-      margin-left: 260px;
+      // width: calc(100% - 260px);
+      width: 100%;
+      margin-left: 210px;
       margin-top: 55px;
       background-color: $var-color-grey-l;
       transition: all ease 0.3s;
