@@ -84,64 +84,13 @@
     }
 }
 
-
-
-
-
-@media screen and (max-width:580px) {
+@media screen and (max-width: 767px) {
     
 
-    .sidebar-wrapper {
-        width: 0px;
-        .sidebar {
-            font: $fw-md $fs-s $primary-font;
-            width: 100%;
-            .button-wrapper{
-                span{
-                    display: none;
-                }
-                width: 100%;
-                padding: 10px;
-                
-                button{
-                    text-align: center;
-                    width:100%;
-                  
-                }
-            }
-           
-            .sidenav-links-container{
-                padding:0px 5px 0px 10px;
-            }
-    
-            .sidenav-links {
-    
-                .accordion-item {
-                    border: none !important;
-                    background-color: $var-color-dark-md; 
-    
-                }
-    
-                .accordion-button {
-                    span{
-                        display: none;
-                    }
-                    gap: 10px !important;
-                  
-                    
-                    &::after {
-                    
-                        margin: 0;
-                        
-                    }
-
-                }
-
-            }
-        }
+    .sidebar-wrapper{
+        width: 0%;
     }
-    
-
-
-
 }
+
+
+
