@@ -1,7 +1,13 @@
 .count-cards-wrapper{
     margin-bottom: 30px;
-    .count-card{
- 
+    
+    .card-wrapper{
+        border-radius: 10px;
         background-color: $var-color-white;
+        .count-card{
+            
+            background-color: $var-color-white;
+        }
     }
+
 }
